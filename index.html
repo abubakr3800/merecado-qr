@@ -148,7 +148,7 @@
           })
           .then((data) => {
               ecdata = data;
-              let obj = ecdata.find( o => o.name == params['name'] );
+              let obj = ecdata.find( o => o.name == params['redid'] );
 
                   if ( obj != undefined ) {
                       console.log(obj);
