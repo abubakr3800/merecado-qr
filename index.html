@@ -148,14 +148,16 @@
           })
           .then((data) => {
               ecdata = data;
-              let obj = ecdata.find( o => o.name == params['redid'] );
+              let obj = ecdata.find( o => o.redid == params['id'] );
 
+              console.log(params);
+              console.log(obj);
                   if ( obj != undefined ) {
                       console.log(obj);
 
-                      window.location.href = obj['url'];
+                      // window.location.href = obj['url'];
                   } else {
-                      window.location.href = "notfound.html";
+                      // window.location.href = "notfound.html";
                   }
           }
                 )
